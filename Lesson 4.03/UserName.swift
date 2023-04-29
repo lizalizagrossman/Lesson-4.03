@@ -5,6 +5,10 @@
 //  Created by Elizabeth on 27/04/2023.
 //
 
-struct UserName: Codable {
-    let name: String
+class UserName: Codable {
+    var name: String
+    
+    func logOut() {
+        name = ""
+    }
 }
